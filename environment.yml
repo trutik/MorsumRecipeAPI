@@ -1,0 +1,6 @@
+name: morsumapi
+dependencies:
+  - python=3.9.2 
+  - flask=1.1.2 
+  - sqlalchemy=1.3.20
+  - pylint=2.7.2
