@@ -1,10 +1,8 @@
 from flask import Flask, request, Response
-from storage_api.storage import Storage
-from status_responses import invalid_route, not_found, resource_exists, bad_request, resource_success
+from recipeapi.storage.storage import Storage
+from .status_responses import invalid_route, not_found, resource_exists, bad_request, resource_success
 from schema import SchemaError
-from schemas import validate_schema, IngredientsSchema, CreateRecipeSchema, EditRecipeSchema, GetRecipeSchema, DeleteRecipeSchema
-
-
+from .schemas import validate_schema, IngredientsSchema, CreateRecipeSchema, EditRecipeSchema, GetRecipeSchema, DeleteRecipeSchema
 
 app = Flask(__name__)
 storage = Storage()
