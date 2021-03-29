@@ -15,7 +15,6 @@ class Storage:
         self.recipes = meta.tables['recipes']
         self.ingredients = meta.tables['ingredients']
         self.bridge_recipes_ingredients = meta.tables['bridge_recipes_ingredients']
-        
 
     @staticmethod
     def _res_to_json(results):
@@ -44,7 +43,6 @@ class Storage:
             else:
                 raise NotImplementedError('The specified resource extraction is not implemented.')
         return self._res_to_json(items)
-        
 
     def get_item(self, collection, attr_filters={}):   
         return self.get_items(collection, attr_filters=attr_filters)[0]
