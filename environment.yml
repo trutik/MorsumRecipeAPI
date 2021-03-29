@@ -1,9 +1,16 @@
 name: morsumapi
 dependencies:
+  - pip=21.0.1
   - python=3.9.2 
-  - flask=1.1.2 
-  - sqlalchemy=1.3.20
-  - pylint=2.7.2
-  - schema=0.7.4
+  - pip:
+    - flask==1.1.2 
+    - sqlalchemy==1.3.20
+    - pylint==2.7.2
+    - schema==0.7.4
+    - mysqlclient==2.0.3
+channels: 
+  - nodefaults
+  - conda-forge
 variables:
-  DCONNECTION_STRING: valueA
+  DB_CONNECTION_STRING: mysql+mysqldb://root:S&o9Oehssaz(2@localhost:3306/my_schema?charset=utf8mb
+
