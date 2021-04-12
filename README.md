@@ -1,4 +1,4 @@
-The code in this repo was created for the task described below.
+The code in this repo was created for the task described below:
 
 Using python and Flask construct a REST API about recipes.
 Create a few tables in a mysql database that has recipe information and recipe ingredients.
