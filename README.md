@@ -5,5 +5,6 @@ Create a few tables in a mysql database that has recipe information and recipe i
 Create an API to
 - get, edit, delete and create recipes.
 - get recipes by certain ingredient_id
+
 Good python techniques should be used, especially regarding the design of the API. Furthermore, some
 error handling is also expected.
